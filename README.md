@@ -17,15 +17,19 @@ java-redis-counter
 合适的方案：综合QPS、可用性、硬件TCO、粗略度、延迟等因素，取得最佳收益的方案。
 
 解决方案：
+
 java-redis-counter设计用来满足以上需求，初步考虑如下：
+
 Thrift RPC: 20W+ QPS 
+
 JVM-in Memory Redis:100 billion key in memory，about 10day 
 TimeOut:LRU AppendLog: 
 AppendLog: Recovery in memory data
 Disruptor:Publish/Consummer pattern,async write data to hbase
 MongoDB：All Data Storage
 
-说明
+说明：
+
 1、为什么不采用Redis？
 Redis采用C实现（虽然代码行只有2万多），驾驭不了；
 Redis要求所有数据都在内存中，满足不了每天1000万新增计数的存储需求；
