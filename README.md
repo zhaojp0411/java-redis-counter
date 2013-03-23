@@ -21,12 +21,11 @@ java-redis-counter
 java-redis-counter设计用来满足以上需求，初步考虑如下：
 
 Thrift RPC: 20W+ QPS 
-
 JVM-in Memory Redis:100 billion key in memory，about 10day 
-TimeOut:LRU AppendLog: 
+TimeOut:LRU
 AppendLog: Recovery in memory data
 Disruptor:Publish/Consummer pattern,async write data to hbase
-MongoDB：All Data Storage
+MongoDB:All Data Storage
 
 说明：
 
