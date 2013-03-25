@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<configuration>
+		<property>
+			<name>hbase.zookeeper.quorum</name>
+			<!-- <value>h016059.mars.grid.sina.com.cn,h016058.mars.grid.sina.com.cn,h016057.mars.grid.sina.com.cn,h016056.mars.grid.sina.com.cn,h016055.mars.grid.sina.com.cn</value> -->
+			<value>10.73.11.200,10.73.11.171,10.73.11.196</value>
+		</property>
+		<property>
+			<name>zookeeper.session.timeout</name>
+			<value>6000</value>
+		</property>
+		<property>
+			<name>hbase.zookeeper.property.clientPort</name>
+			<value>2181</value>
+		</property>
+		<property>
+			<name>zookeeper.znode.parent</name>
+			<value>/simulation-hbase</value>
+		</property>
+		<property>
+			<name>hbase.client.ipc.pool.size</name>
+			<value>100</value>
+		</property>
+	</configuration>
+
+</configuration>
+

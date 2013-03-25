@@ -40,6 +40,7 @@ MongoDB和HBase都能够满足海量数据存储需求，并且读写性能也�
 3、Jvm-In Memory Redis的数据结构？
 ConcurrentHashMap<byte[],AtomicInteger> 解决并发写入的原子性问题
 1亿数据的内存占用量？？？
+参考：https://github.com/spullara/redis-protocol
 
 4、In Memory数据宕机恢复？
 所有写入操纵将会生成appendlog（类似redis的aof文件），重启从log恢复数据（1亿数据恢复时间：6分钟），定期进行日志重写（类似redis的bgrewrite）；

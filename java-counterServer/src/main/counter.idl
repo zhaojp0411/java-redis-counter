@@ -1,0 +1,49 @@
+namespace java org.counter
+
+/** A specific key was requested that does not exist. */
+exception NotFoundException {
+}
+
+/** RPC timeout was exceeded.*/
+exception TimedOutException {
+}
+
+/** Not all the replicas required could be created and/or read. */
+exception UnavailableException {
+}
+
+
+service Counter {
+/**
+ * get count for specific key
+ */
+i32 get(1:required string key) throws (1:NotFoundException nfe, 2:UnavailableException ue, 3:TimedOutException te),
+
+/**
+ * get multi count for specific keys
+ */
+map<string,i32> multiGet(1:required list<string> keys) throws (1:NotFoundException nfe, 2:UnavailableException ue, 3:TimedOutException te),
+
+ /**
+   * Increment or decrement a counter.
+   */
+i32 add(1:required string key, 2:required i32 value) throws (1:UnavailableException ue, 2:TimedOutException te),
+
+ /**
+   * Increment or decrement a counter.
+   */
+map<string,i32> adds(1:required map<string,i32> keys) throws (1:UnavailableException ue, 2:TimedOutException te),
+
+
+
+i32 getLong(1:required i64 key) throws (1:NotFoundException nfe, 2:UnavailableException ue, 3:TimedOutException te),
+
+map<i64,i32> multiGetLong(1:required list<i64> keys) throws (1:NotFoundException nfe, 2:UnavailableException ue, 3:TimedOutException te),
+
+i32 addLong(1:required i64 key, 2:required i32 value) throws (1:UnavailableException ue, 2:TimedOutException te),
+
+map<i64,i32> addsLong(1:required map<i64,i32> keys) throws (1:UnavailableException ue, 2:TimedOutException te)
+
+}
+
+
