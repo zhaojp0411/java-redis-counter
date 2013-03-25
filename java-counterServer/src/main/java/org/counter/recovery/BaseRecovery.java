@@ -82,7 +82,8 @@ public class BaseRecovery implements RecoveryAble {
 						event.setOp(temp.op);
 						event.setPairs(temp.pairs);
 						event.setTime(temp.time);
-						
+						event.setType(temp.type);
+
 						// make the event available to EventProcessors
 						ringBuffer.publish(sequence); 
 					}catch (Exception e) {
