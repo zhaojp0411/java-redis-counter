@@ -45,3 +45,16 @@ NonBlockingHashMapLong<AtomicInteger> 解决并发写入的原子性问题，以
 所有写入操纵将会生成appendlog（类似redis的aof文件），重启从log恢复数据（1亿数据恢复时间：6分钟），定期进行日志重写（类似redis的bgrewrite）；
 
 
+一些基本的性能：
+
+in-Memory NonBlockingHashMapLong<AtomicInteger>  (8cpu 12GB RAM)
+get  17w+
+add 7w+
+
+hbase Increment (3 region server)
+get 1.1w+
+add 0.8w+
+
+recoverylog load 
+
+
