@@ -21,11 +21,10 @@ java-redis-counter
 java-redis-counter设计用来满足以上需求，初步考虑如下：
 
 Thrift RPC: 20W+ QPS 
-JVM-in Memory Redis:100 billion key in memory，about 10day 
+JVM-in Memory Counter:100 billion key in memory，about 10day 
 TimeOut:LRU
 AppendLog: Recovery in memory data
-Disruptor:Publish/Consummer pattern,async write data to hbase
-MongoDB:All Data Storage
+HBase:All Data Storage
 
 说明：
 
@@ -34,13 +33,13 @@ Redis采用C实现（虽然代码行只有2万多），驾驭不了；
 Redis要求所有数据都在内存中，满足不了每天1000万新增计数的存储需求；
 如果冷热数据分离的话，增加了调用方的复杂度，并且需要运维定期进行数据清理；
 
-2、为什么选择MongoDB，而不是HBase？
-MongoDB和HBase都能够满足海量数据存储需求，并且读写性能也满足邀请，但MongoDB环境部署更方便(单机)。
+2、为什么选HBase？
+支持海量数据存储，单个RegionServer incr写入操纵能够5000+QPS。
 
-3、Jvm-In Memory Redis的数据结构？
-ConcurrentHashMap<byte[],AtomicInteger> 解决并发写入的原子性问题
-1亿数据的内存占用量？？？
-参考：https://github.com/spullara/redis-protocol
+3、Jvm-In Memory 的数据结构？
+ConcurrentHashMap<String,AtomicInteger>
+NonBlockingHashMapLong<AtomicInteger> 解决并发写入的原子性问题，以及内存空间占用问题。
+1亿数据的内存占用量，1.4GB
 
 4、In Memory数据宕机恢复？
 所有写入操纵将会生成appendlog（类似redis的aof文件），重启从log恢复数据（1亿数据恢复时间：6分钟），定期进行日志重写（类似redis的bgrewrite）；
