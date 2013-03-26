@@ -39,7 +39,7 @@ Redis要求所有数据都在内存中，满足不了每天1000万新增计数�
 3、Jvm-In Memory 的数据结构？
 ConcurrentHashMap<String,AtomicInteger>
 NonBlockingHashMapLong<AtomicInteger> 解决并发写入的原子性问题，以及内存空间占用问题。
-1亿数据的内存占用量，1.4GB
+3000万 key-value占用JVM内存8GB（80%）
 
 4、In Memory数据宕机恢复？
 所有写入操纵将会生成appendlog（类似redis的aof文件），重启从log恢复数据（1亿数据恢复时间：6分钟），定期进行日志重写（类似redis的bgrewrite）；
