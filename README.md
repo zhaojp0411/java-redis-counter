@@ -55,6 +55,10 @@ hbase Increment (3 region server)
 get 1.1w+
 add 0.8w+
 
+10% in hbase 90% in memory
+get 9w+
+add 7w+
+
 Memory Capcaity : JVM 8G  3000w Key 内存占用82%（读取性能无明显衰减）
  S0     S1     E      O      P     YGC     YGCT    FGC    FGCT     GCT   
  75.00   0.00  71.34  82.10  68.21    270   34.272     0    0.000   34.272
