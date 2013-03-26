@@ -47,14 +47,22 @@ NonBlockingHashMapLong<AtomicInteger> 解决并发写入的原子性问题，以
 
 一些基本的性能：
 
-in-Memory NonBlockingHashMapLong<AtomicInteger>  (8cpu 12GB RAM)
+in-Memory NonBlockingHashMapLong<AtomicInteger>  (8cpu 12GB RAM 8G JVM)
 get  17w+
-add 7w+
+add 17w+
 
 hbase Increment (3 region server)
 get 1.1w+
 add 0.8w+
 
+Memory Capcaity : JVM 8G  3000w Key 内存占用82%（读取性能无明显衰减）
+ S0     S1     E      O      P     YGC     YGCT    FGC    FGCT     GCT   
+ 75.00   0.00  71.34  82.10  68.21    270   34.272     0    0.000   34.272
+ 75.00   0.00  96.44  82.10  68.21    270   34.272     0    0.000   34.272
+  0.00  75.00  20.01  82.10  68.21    271   34.361     0    0.000   34.361
+  0.00  75.00  45.39  82.10  68.21    271   34.361     0    0.000   34.361
+
 recoverylog load 
+
 
 
