@@ -4,3 +4,6 @@
 *.jar
 *.war
 *.ear
+
+java-counterServer/target
+java-counterClient/target
