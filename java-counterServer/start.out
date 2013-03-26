@@ -1,24 +1,24 @@
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.2-1221870, built on 12/21/2011 20:46 GMT
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:host.name=localhost
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.version=1.6.0_37
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.home=/home/zhiguo4/software/jdk1.6.0_37/jre
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.class.path=target/java-counterServer-jar-with-dependencies.jar
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/home/zhiguo4/software/jdk1.6.0_37/jre/lib/i386/server:/home/zhiguo4/software/jdk1.6.0_37/jre/lib/i386:/home/zhiguo4/software/jdk1.6.0_37/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:os.arch=i386
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:os.version=3.2.0-39-generic-pae
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:user.name=zhiguo4
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:user.home=/home/zhiguo4
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Client environment:user.dir=/home/zhiguo4/example/java-counterServer
-13/03/25 20:32:53 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=10.73.11.171:2181,10.73.11.200:2181,10.73.11.196:2181 sessionTimeout=6000 watcher=hconnection
-13/03/25 20:32:53 INFO zookeeper.ClientCnxn: Opening socket connection to server /10.73.11.196:2181
-13/03/25 20:32:53 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 21477@zhiguo4-ThinkPad-X61
-13/03/25 20:32:53 INFO zookeeper.ClientCnxn: Socket connection established to 10.73.11.196/10.73.11.196:2181, initiating session
-13/03/25 20:32:53 INFO zookeeper.ClientCnxn: Session establishment complete on server 10.73.11.196/10.73.11.196:2181, sessionid = 0x33ca5677e150104, negotiated timeout = 18000
-13/03/25 20:32:53 INFO info: open log file ./recovery.log
-13/03/25 20:32:53 INFO info: recovery.log is empty
-13/03/25 20:32:53 INFO info: recovery form logfile to memcounter end, cost 1
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.2-1221870, built on 12/21/2011 20:46 GMT
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:host.name=localhost
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.version=1.6.0_37
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.home=/home/zhiguo4/software/jdk1.6.0_37/jre
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.class.path=target/java-counterServer-jar-with-dependencies.jar
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/home/zhiguo4/software/jdk1.6.0_37/jre/lib/i386/server:/home/zhiguo4/software/jdk1.6.0_37/jre/lib/i386:/home/zhiguo4/software/jdk1.6.0_37/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:os.arch=i386
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:os.version=3.2.0-39-generic-pae
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:user.name=zhiguo4
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:user.home=/home/zhiguo4
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Client environment:user.dir=/home/zhiguo4/example/git/java-redis-counter/java-counterServer
+13/03/26 13:30:41 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=10.73.11.171:2181,10.73.11.200:2181,10.73.11.196:2181 sessionTimeout=6000 watcher=hconnection
+13/03/26 13:30:41 INFO zookeeper.ClientCnxn: Opening socket connection to server /10.73.11.200:2181
+13/03/26 13:30:41 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 10407@zhiguo4-ThinkPad-X61
+13/03/26 13:30:41 INFO zookeeper.ClientCnxn: Socket connection established to 10.73.11.200/10.73.11.200:2181, initiating session
+13/03/26 13:30:41 INFO zookeeper.ClientCnxn: Session establishment complete on server 10.73.11.200/10.73.11.200:2181, sessionid = 0x13ca5677e0c0170, negotiated timeout = 18000
+13/03/26 13:30:42 INFO info: open log file ./recovery.log
+13/03/26 13:30:42 INFO info: recovery.log is empty
+13/03/26 13:30:42 INFO info: recovery form logfile to memcounter end, cost 0
  host: localhost port: 8203 selectThread: 8 workThread: 20 isServing: true start listening. 

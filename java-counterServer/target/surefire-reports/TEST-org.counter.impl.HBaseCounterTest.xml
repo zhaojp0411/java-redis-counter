@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="4.022" errors="0" skipped="0" tests="4" name="org.counter.impl.HBaseCounterTest">
+<testsuite failures="0" time="3.744" errors="0" skipped="0" tests="4" name="org.counter.impl.HBaseCounterTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/zhiguo4/software/jdk1.6.0_37/jre/lib/i386"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/zhiguo4/example/java-counterServer"/>
+    <property name="user.dir" value="/home/zhiguo4/example/git/java-redis-counter/java-counterServer"/>
     <property name="java.runtime.version" value="1.6.0_37-b06"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/home/zhiguo4/software/jdk1.6.0_37/jre/lib/endorsed"/>
@@ -58,8 +58,8 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="3.151" classname="org.counter.impl.HBaseCounterTest" name="testGet"/>
-  <testcase time="0.36" classname="org.counter.impl.HBaseCounterTest" name="testMultiGet"/>
-  <testcase time="0.139" classname="org.counter.impl.HBaseCounterTest" name="testAdd"/>
-  <testcase time="0.368" classname="org.counter.impl.HBaseCounterTest" name="testAdds"/>
+  <testcase time="2.863" classname="org.counter.impl.HBaseCounterTest" name="testGet"/>
+  <testcase time="0.352" classname="org.counter.impl.HBaseCounterTest" name="testMultiGet"/>
+  <testcase time="0.147" classname="org.counter.impl.HBaseCounterTest" name="testAdd"/>
+  <testcase time="0.375" classname="org.counter.impl.HBaseCounterTest" name="testAdds"/>
 </testsuite>

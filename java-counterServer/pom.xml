@@ -4,13 +4,7 @@
 	<groupId>redis.counter</groupId>
 	<artifactId>java-redis-counter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<parent>
-		<artifactId>weibo-api</artifactId>
-		<groupId>com.weibo.api</groupId>
-		<version>1.6</version>
-	</parent>
-
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
