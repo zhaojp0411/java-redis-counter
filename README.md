@@ -68,5 +68,6 @@ Memory Capcaity : JVM 8G  3000w Key 内存占用82%（读取性能无明显衰�
 
 recoverylog load 
 
-
+遇到的问题：
+jvm中管理对象消耗内存太多，或将in-memory管理的数据切换到redis，通过socket访问数据（localhost）。
 
